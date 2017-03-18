@@ -5,7 +5,7 @@
  * This source code is licensed under the license found in the LICENSE file in
  * the root directory of this source tree.
  */
-import { dateStringUTC, isDate } from 'lib/DateUtils';
+import { dateStringUTC, localDateStringUTC, isDate } from 'lib/DateUtils';
 import getFileName               from 'lib/getFileName';
 import Parse                     from 'parse';
 import Pill                      from 'components/Pill/Pill.react';
@@ -36,7 +36,7 @@ let BrowserCell = ({ type, value, hidden, width, current, onSelect, readonly, on
       </a>
     );
   } else if (type === 'Date') {
-    content = dateStringUTC(value);
+    content = localDateStringUTC(value);
   } else if (type === 'Boolean') {
     content = value ? 'True' : 'False';
   } else if (type === 'Array') {
