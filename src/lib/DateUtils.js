@@ -110,6 +110,11 @@ export function monthsFrom(date, delta) {
   );
 }
 
+export function localDateStringUTC(date) {
+  return date.toLocaleDateString();
+}
+
+
 export function dateStringUTC(date) {
   let full = String(date.getUTCDate()) + ' ' +
     shortMonth(date.getUTCMonth()) + ' ' +
