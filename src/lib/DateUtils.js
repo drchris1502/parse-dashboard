@@ -111,7 +111,7 @@ export function monthsFrom(date, delta) {
 }
 
 export function localDateStringUTC(date) {
-  return date.toLocaleDateString();
+  return date.toLocaleString();
 }
 
 
